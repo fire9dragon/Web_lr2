@@ -1,0 +1,39 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  padding: 0px 30px;
+}
+
+legend {
+  margin-left: 20px;
+  padding-bottom: 7px;
+  font-size: 20px;
+}
+
+fieldset {
+  border: 1px solid lightskyblue;
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.container {
+  display: grid;
+  max-width: 1000px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  border-color: rgb(185, 209, 255);
+  box-shadow: 0 0 15px black;
+  margin: 30px auto;
+}
+
+.sumbit {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}

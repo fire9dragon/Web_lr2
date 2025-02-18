@@ -1,0 +1,39 @@
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  border-radius: 5em;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.bg-blue {
+  background-color: lightblue;
+}
+
+.bg-grey {
+  background-color: rgb(177, 177, 177);
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-end {
+  text-align: end;
+}
+
+.hover:hover {
+  background-color: lightcoral;
+}
