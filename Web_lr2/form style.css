@@ -14,8 +14,8 @@ legend {
 }
 
 fieldset {
-  border: 1px solid lightskyblue;
-  padding: 10px;
+  border: 1.5px solid lightskyblue;
+  padding: 0px 10px;
   margin-bottom: 25px;
   border-radius: 5px;
 }
@@ -31,9 +31,74 @@ fieldset {
   margin: 30px auto;
 }
 
-.sumbit {
+.submit {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+
+.submit button {
+  padding: 7px;
+  background: linear-gradient(to bottom, rgb(53, 174, 255), rgb(43, 86, 194));
+  text-shadow: 0 0 20px rgb(83, 83, 83);
+  font-size: 17px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.form-group label {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+input {
+  margin-top: -5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1.5px solid lightgray;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 1.5px solid lightgreen;
+}
+
+input:focus {
+  outline: none;
+}
+
+select {
+  margin-top: -5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1.5px solid lightgray;
+}
+
+textarea {
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1.5px solid lightgray;
+  resize: vertical;
+}
+
+.required::after {
+  content: "*";
+  color: red;
+}
+
+:required:empty {
+  box-shadow: 0 0 2px;
 }
